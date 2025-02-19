@@ -1,0 +1,39 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>110</x><y>29</y><w>390</w><h>220</h></coordinates><panel_attributes>Persona
+--
+-m_nombre : string
+-m_apellidos : string
+-m_yearNacimiento : int
+--
++Persona()
++Persona(_nombre : string, _apellidos : string, _yearNacimiento : int)
++getEdad(_currentYear : int) : int
++getNombre() : string
++set Nombre(m_nombre : string) : void
++getApellidos() : string
++setApellidos(m_apellidos : string) : void
++getYearNacimiento() : int
++setYearNacimiento(m_yearNacimiento : int) : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>279</y><w>220</w><h>160</h></coordinates><panel_attributes>Punto2D
+--
+-m_coordX : double
+-m_coordY : double
+--
++Punto2D()
++Punto2D(_x : double, _ y : double)
++getCoordX() : double
++set CoordX(_coordX : double) : void
++getCoordY() : double
++set CoordY(_coordY : double) : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>279</y><w>330</w><h>170</h></coordinates><panel_attributes>Circunferencia
+--
+-m_centro : Punto2D
+-m_radio : double
+--
++Circunferencia()
++Circunferencia(_radio : double, _ x : double, _ y : double)
++Circunferencia(_radio : double, _ centro : Punto2D)
++getCentro() : Punto2D
++set Centro(_centro : Punto2D) : void
++getRadio() : double
++set Radio(_radio : double) : void
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
